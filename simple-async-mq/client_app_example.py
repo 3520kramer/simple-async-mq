@@ -1,12 +1,11 @@
-from client_app import receive_msg, connect 
-
+from client_app import receive_msg, connect, publish_msg
 
 @receive_msg(topic='topic1')
-def hej(data):
+def handle(data):
     print("TEST1:", data)
 
 @receive_msg(topic='topic3')
-def hej(data):
+def handle(data):
     print("TEST2:", data)
 
 connect(

@@ -26,6 +26,14 @@ def receive_msg(topic):
     # returning inner function
     return inner
 
+async def publish_msg(topic: str ='topic1', content_format: str ='json', content: str='{"name": "susan"}'):
+    msg = {
+    'topic': topic, 
+    'content_format': content_format, 
+    'content': content 
+    }
+    await sio.emit('publish', msg)
+
 
 def connect(host: str, port: str, topic: str = None, output_format: str = 'json', topics: list[(str, str)] = None):
     """
