@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'simplemq',         # How you named your package folder (MyLib)
-  packages = ['simplemq'],   # Chose the same as "name"
+  name = 'simple_async_mq',         # How you named your package folder (MyLib)
+  packages = ['simple_async_mq'],   # Chose the same as "name"
   version = '0.2',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A simple async message queue client - socket-io wrapper',   # Give a short description about your library
