@@ -1,14 +1,15 @@
 from distutils.core import setup
+import setuptools
 setup(
   name = 'simple_async_mq',         # How you named your package folder (MyLib)
   packages = ['simple_async_mq'],   # Chose the same as "name"
-  version = '0.2.1',      # Start with a small number and increase it with every change you make
+  version = '0.2.2',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A simple async message queue client - socket-io wrapper',   # Give a short description about your library
   author = 'Oliver Kramer',                   # Type in your name
   author_email = '3520.kramer@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/3520kramer/simple-async-mq',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_021.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/user/reponame/archive/v_022.tar.gz',    # I explain this later on
   keywords = ['mq', 'async', 'client'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'asyncio',
