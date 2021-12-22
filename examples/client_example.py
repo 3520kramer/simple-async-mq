@@ -1,4 +1,4 @@
-from client_app import receive_msg, connect, publish_msg
+from simple_async_mq import connect, receive_msg, publish_msg
 
 @receive_msg(topic='topic1')
 def handle(data):
